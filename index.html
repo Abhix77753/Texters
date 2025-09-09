@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SuperSocial MVP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>SuperSocial</h1>
+<nav id="navButtons" style="display:none;">
+<button onclick="showSection('feedSection')">Feed</button>
+<button onclick="showSection('profileSection')">Profile</button>
+<button onclick="showSection('chatSection')">ChatBot 🤖</button>
+<button onclick="logout()">Logout</button>
+</nav>
+</header>
+
+<section id="loginSection">
+<div class="login-container">
+<h2>Login / Signup</h2>
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+<button onclick="loginUser()">Login</button>
+<button onclick="signupUser()">Signup</button>
+</div>
+</section>
+
+<section id="feedSection">
+<div class="post-section">
+<textarea id="postText" placeholder="What's on your mind?"></textarea>
+<button onclick="createPost()">Post</button>
+</div>
+<div id="feed"></div>
+</section>
+
+<section id="profileSection">
+<h2>Profile</h2>
+<p><strong>Username:</strong> <span id="profileUsername"></span></p>
+<p><strong>Email:</strong> <span id="profileEmail"></span></p>
+<p><strong>Coins:</strong> <span id="profileCoins"></span></p>
+</section>
+
+<section id="chatSection">
+<h2>Chat with AI</h2>
+<div id="chatbox"></div>
+<input type="text" id="chatInput" placeholder="Ask something...">
+<button onclick="sendMessage()">Send</button>
+</section>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+body{font-family:Arial,sans-serif;background:#121212;color:#fff;margin:0;padding:0;}
+header{display:flex;justify-content:space-between;align-items:center;padding:10px 20px;background:#1e1e1e;}
+nav button{margin:0 5px;padding:5px 10px;cursor:pointer;}
+textarea,input[type=text],input[type=email],input[type=password]{width:100%;padding:10px;margin:5px 0;border-radius:5px;border:none;background:#1e1e1e;color:#fff;}
+button{padding:5px 10px;margin:5px;cursor:pointer;}
+.post,.chat-msg{padding:10px;margin:10px 0;background:#1e1e1e;border-radius:5px;}
+#chatbox{height:300px;overflow-y:auto;border:1px solid #333;padding:10px;}
+.login-container,.post-section,.chat-container{padding:20px;}
+section{display:none;}
